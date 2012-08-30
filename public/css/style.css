@@ -1,0 +1,44 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+}
+.navbar-fixed-top {
+  box-shadow: 0px 0px 3px #000;
+  border-bottom: 1px solid #999;
+}
+ul#navigation li.active a {
+	color: #fff;
+}
+ul#navigation li a {
+	color: #fff;
+}
+
+ul#navigation li a:hover {
+	color: #000!important;
+}
+ul#navigation li h3 a:hover {
+	text-decoration: none;
+	color: #454545 !important;
+}
+.hero-unit h1 {
+	margin-bottom: 10px;
+}
+ul.icons *, ol.icons *{
+	list-style-type: none;
+}
+.icons i{
+	margin-right: 3px;
+}
+.icons a{
+	color: #fff;
+}
+.code{
+	padding: 10px;
+	background: #1d505f;
+	color: #fff;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-family: 'Monaco','Consolas','Monospace';
+	font-size: 1em;
+}
