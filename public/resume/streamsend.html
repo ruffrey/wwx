@@ -884,7 +884,7 @@ $(function(){
 
 		$('.print').click(function(e){
 			e.preventDefault();
-			window.open('res.html?print','_blank');
+			window.open('streamsend.html?print','_blank');
 		});
 		// scrollspy
 		$('.navbar').scrollspy()
@@ -894,7 +894,7 @@ $(function(){
 	}
 });
 // GA
-var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+try{var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();}catch(er){}
 	</script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar">
@@ -912,8 +912,11 @@ var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_trackPa
 		  </a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="">
+              <li>
                 <a href="#contact" data-scroll="contact">Contact</a>
+              </li>
+			  <li>
+                <a href="#goal" data-scroll="goal">Goal</a>
               </li>
               <li>
                 <a href="#employment" data-scroll="employment">Experience</a>
@@ -967,7 +970,12 @@ var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_trackPa
 			</h2>
 		</div>
 	</div>
-	
+	<div class="row hero-unit" id="goal">
+		<div class="span8">
+			<h1>Goal</h1>
+			<h3>Build great applications with great colleagues.</h3>
+		</div>
+	</div>
 	<div class="row hero-unit" id="employment">
 		<div class="span8">
 			<h1>Relevant Experience</h1>
@@ -1201,7 +1209,7 @@ var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_trackPa
 				</td>
 				<td style="vertical-align:text-top">
 					<ul>
-						<li>Open source mindset</li>
+						<li>Open source</li>
 						<li>Teamwork &amp; mutually-beneficial relationships</li>
 						<li>Customer-focus</li>
 						<li>Innovation &amp; producivity through work-life balance</li>
