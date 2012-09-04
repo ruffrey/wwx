@@ -804,8 +804,6 @@ table.detail tr.hide td:nth-child(1){padding-left:20px;}
 table.detail td:nth-child(2){width:35%;}
 table.detail td:nth-child(3){width:15%;}
 table.detail td:nth-child(4){width:15%;}
-.importantSize{10px!important;}
-
 /*!
  * Bootstrap Responsive v2.1.0
  *
@@ -829,6 +827,10 @@ table.detail td:nth-child(4){width:15%;}
 
 function printMode(){
 	$('style,.noprint').remove();
+	$('<style/>')
+		.text('.importantSize{font-size:10px!important;}')
+		.appendTo('body')
+	;
 	$('body')
 		.css("font-family","Tahoma,'Trebuchet MS',sans-serif")
 		.addClass('importantSize')
@@ -899,10 +901,10 @@ try{var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_tra
 	</head>
 	<body data-spy="scroll" data-target=".navbar">
 	<span id="top"></span>
-		<div class="navbar navbar-inverse navbar-fixed-top noprint">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	<div class="navbar navbar-inverse navbar-fixed-top noprint">
+      <div class="navbar-inner noprint">
+        <div class="container noprint">
+          <button type="button" class="btn btn-navbar noprint" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -910,7 +912,7 @@ try{var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_tra
           <a class="brand" href="#" data-scroll="top">
 			Jeff Parrish
 		  </a>
-          <div class="nav-collapse collapse">
+          <div class="nav-collapse collapse noprint">
             <ul class="nav">
               <li>
                 <a href="#contact" data-scroll="contact">Contact</a>
@@ -955,7 +957,7 @@ try{var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_tra
 			<h4>Sacramento, CA</h4>
 			<h4>916.801.6693</h4>
 			<h5>
-				<a href="mailto:jeffhparrish@gmail.com&subject=Please%20come%20in%20for%20an%20interview!">
+				<a href="mailto:jeffhparrish@gmail.com">
 					jeffhparrish@gmail.com
 				</a>
 			</h5>
@@ -973,7 +975,7 @@ try{var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-6']);_gaq.push(['_tra
 	<div class="row hero-unit" id="goal">
 		<div class="span8">
 			<h1>Goal</h1>
-			<h3>Build great applications with great colleagues.</h3>
+			<h3>Build important applications with great colleagues.</h3>
 		</div>
 	</div>
 	<div class="row hero-unit" id="employment">
