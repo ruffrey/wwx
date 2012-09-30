@@ -1,6 +1,6 @@
 {
   "name": "Wiggleware",
-  "version": "0.2.0-13",
+  "version": "0.2.0-14",
   "author": "jpx",
   "dependencies": {
     "express": "2.5.6",

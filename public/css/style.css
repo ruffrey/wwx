@@ -33,6 +33,7 @@ ul.icons *, ol.icons *{
 .icons a{
 	color: #fff;
 }
+.icon-large{vertical-align:text-bottom;font-size:1.3em;}
 .code{
 	padding: 10px;
 	background: #1d505f;
@@ -42,3 +43,6 @@ ul.icons *, ol.icons *{
 	font-family: 'Monaco','Consolas','Monospace';
 	font-size: 1em;
 }
+.skinny{font-weight:100;}
+.lighter{color:#ababab;}
+.blacker{color:#000;}
