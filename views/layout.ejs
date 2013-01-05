@@ -15,7 +15,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
     <script type="text/javascript" src="/js/ww.js"></script>
 
@@ -27,9 +27,11 @@
 	
     <!-- The fav and touch icons -->
     <link rel="shortcut icon" href="/favicon.ico">
+	<% if(process.env.NODE_ENV=="production") { %>
 	<script type="text/javascript">
 	  var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-4']);_gaq.push(['_setDomainName','wiggleware.com']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
 	</script>
+	<% } %>
   </head>
   <body>
     <div class="container">
@@ -37,7 +39,7 @@
 			<div class="span3">
 				<ul id="navigation" class="nav nav-list">
 				  <li class="nav-header">
-						<h3><a href="/">Wiggleware</a></h3>
+						<h3 style="letter-spacing:.2em"><a href="/">Wiggleware</a></h3>
 				  </li>
 				  <li>
 					<a href="/">
@@ -61,12 +63,18 @@
 				  <li>
 				   <a href="//blog.wiggleware.com">
 					  <i class="icon-rss icon-white icon-large"></i>
-						Blog
+						Wiggleware Blog
 					</a>
 				  </li>
 				  <li>
-				   <a href="/contact">
+				   <a href="//www.blastermate.com">
 					  <i class="icon-envelope icon-white icon-large"></i>
+						Blastermate Email Marketing
+					</a>
+				  </li>
+				  <li>
+				   <a href="/contact" title="Contact">
+					  <i class="icon-bullhorn icon-white icon-large"></i>
 						Say Hello
 					</a>
 				  </li>
@@ -84,9 +92,9 @@
 			</div>
 			<div class="span6" style="text-align: right;">
 				<h6>
-					Running on <a href="//expressjs.com">Express.js</a> 
+					Running on <a href="//expressjs.com">Express</a> 
 					&amp; 
-					<a href="//jit.su">Nodejitsu</a>
+					<a href="//appfog.com">appfog</a>
 				</h6>
 			</div>
 			
