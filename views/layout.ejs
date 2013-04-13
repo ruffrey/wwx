@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%=title%></title>
+    <title>tech consultancy <%=(title?" | "+title:"")%></title>
     <meta name="description" content="Sacramento Software Services from Wiggleware." />
 	<meta name="author" content="Jeff Parrish" />
 	<meta name="keywords" 
@@ -61,9 +61,16 @@
 					</a>
 				  </li>
 				  <li>
-				   <a href="//blog.wiggleware.com">
-					  <i class="icon-rss icon-white icon-large"></i>
-						Wiggleware Blog
+				   <a href="/contact" title="Contact">
+					  <i class="icon-bullhorn icon-white icon-large"></i>
+						Say Hello
+					</a>
+				  </li>
+				  <li class="nav-header"><span class="brand">Products</span></li>
+				  <li>
+				   <a href="//betasac.org">
+					  <i class="icon-group icon-white icon-large"></i>
+						Betasac App Community
 					</a>
 				  </li>
 				  <li>
@@ -72,12 +79,7 @@
 						Blastermate Email Marketing
 					</a>
 				  </li>
-				  <li>
-				   <a href="/contact" title="Contact">
-					  <i class="icon-bullhorn icon-white icon-large"></i>
-						Say Hello
-					</a>
-				  </li>
+				  
 				</ul>
 			</div>
 			<div class="span9">
@@ -87,15 +89,11 @@
 		<div class="row-fluid">
 			<div class="span6">
 				<h6>
-					&copy; <%- (new Date()).getFullYear() %> Wiggleware
+					&copy; <%= (new Date()).getFullYear() %> Wiggleware
 				</h6>
 			</div>
 			<div class="span6" style="text-align: right;">
-				<h6>
-					Running on <a href="//expressjs.com">Express</a> 
-					&amp; 
-					<a href="//appfog.com">appfog</a>
-				</h6>
+				<a href="//nodejs.org"><img src="/img/nodejs-trans.png" width="106px" height="57px" /></a>
 			</div>
 			
 		</div>

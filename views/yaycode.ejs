@@ -1,0 +1,99 @@
+<!-- Embedded JavaScript -->
+<script type="text/javascript">
+	function filt(txt){
+		var srch = txt.toLowerCase().split(' ');
+		$('.icons li').each(function(){
+			var litxt = $(this).text().toLowerCase()
+			   ,show=false;
+			for(var s=0;s<srch.length;s++)
+			{
+				if( litxt.indexOf(srch[s])>-1 )
+				{show=true;}
+			}
+			if(!show)
+			{$(this).hide();}
+			else{$(this).show();}
+		});
+	}
+	$(function(){
+		$('input#fl').keyup(function(){
+			filt( $(this).val() )
+		}).focus();
+	});
+</script>
+<div class="hero-unit">
+	<h1>Code Skills</h1>
+	<br />
+	<p style="font-family:Consolas,Monaco,monospace" class="code">
+		<span style="color:#f1f100;font-weight:bold">var</span> 
+		<span style="color:#89c3da">happy</span> 
+		<span style="color:#00ea00">= '</span><span style="color:#f77b00">Wiggleware</span><span style="color:#00ea00">';</span>
+	</p>
+	<br />
+	<!-- <h3>
+		<a href="//github.com/ruffrey">Github  
+			<i class="icon-white icon-github"></i></a>
+	</h3>
+	<br /> -->
+	<input id="fl" type="text" placeholder="find what you need" />
+	<h4>Code Competencies</h4>
+	<ul class="icons">
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//nodejs.org">Node.js</a>
+			<ul>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//expressjs.com">Express</a></li>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//geddyjs.org">Geddy</a></li>
+			</ul>
+		</li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//ecmascript.org">Javascript</a>
+			<ul>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//api.jquery.com/jQuery.ajax/">AJAX</a></li>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//json.org">JSON</a></li>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//jquery.org">jQuery</a></li>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//jqueryui.com">jQuery UI</a></li>
+				<li><i class="icon-ok icon-large"></i>
+				<a href="//twitter.github.io/bootstrap/">Bootstrap</a></li>
+				
+			</ul>
+		</li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//msdn.microsoft.com/en-us/library/aa286483.aspx">ASP Classic</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//asp.net">ASP.NET</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//asp.net/mvc">ASP.NET MVC</a></li>
+	</ul>
+
+	<h4>Data</h4>
+	<ul class="icons">
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//couchdb.org">CouchDB</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//couchdb.org">MongoDB</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//mysql.com">MySQL</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//microsoft.com/sqlserver">MS SQL Server</a></li>
+	</ul>
+	
+	<h4>Clouds</h4>
+	<ul class="icons">
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//appfog.com">Appfog</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//jit.su">Nodejitsu</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//windowsazure.com">Azure</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//iriscouch.com">Iris Couch</a></li>
+		<li><i class="icon-ok icon-large"></i>
+			<a href="//zoho.com/creator">Zoho</a></li>
+	</ul>
+</div>
