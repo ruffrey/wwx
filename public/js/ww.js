@@ -5,7 +5,7 @@ $(function(){
 			$('ul.nav li.active').removeClass('active');
 			$(this).addClass('active');
 			$(this).find('i').addClass('icon-white');
-			break;
+			return false;
 		}
 	});
 });

@@ -11,7 +11,12 @@ ul#navigation li.active a {
 	color: #fff;
 }
 ul#navigation li {
+	text-transform: uppercase;
 	vertical-align: middle;
+	text-align: right;
+}
+ul#navigation i {
+	float: left;
 }
 ul#navigation li a {
 	padding: 10px 2px;
@@ -50,4 +55,21 @@ ul.icons *, ol.icons *{
 }
 .skinny{font-weight:100;letter-spacing:1px;}
 .lighter{color:#ababab;}
+.darker{color:#828282;}
 .blacker{color:#000;}
+.center{
+	text-align:center;
+}
+.title-top{
+	text-align:center;
+	font-weight: 100;
+	letter-spacing: 0px;
+	font-family: monospace;
+}
+.title-bottom{
+	text-align:center;
+	font-weight: 100;
+	margin-top: -20px;
+	letter-spacing: 1px;
+	font-family: monospace;
+}
