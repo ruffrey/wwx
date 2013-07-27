@@ -25,11 +25,21 @@
 		<link rel="stylesheet" href="/css/font-awesome-ie.css">
 	<![endif]-->
 	
-    <!-- The fav and touch icons -->
+    
     <link rel="shortcut icon" href="/favicon.ico">
 	<% if(process.env.NODE_ENV=="production") { %>
 	<script type="text/javascript">
-	  var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-9491937-4']);_gaq.push(['_setDomainName','wiggleware.com']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9491937-4']);
+	  _gaq.push(['_setDomainName', 'wiggleware.hp.af.com']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 	</script>
 	<% } %>
   </head>
@@ -46,7 +56,7 @@
 				  <li>
 					<a href="/">
 						<i class="icon-home icon-white icon-large"></i>
-						Home
+						Tech Consultancy
 					</a>
 				  </li>
 				  <li>
@@ -56,12 +66,12 @@
 					</a>
 				  </li>
 				  
-				  <li>
+				 <!-- <li>
 				   <a href="/yaycode">
 					  <i class="icon-white icon-large"><strong>{&nbsp;}</strong></i>
 						Skills
 					</a>
-				  </li>
+				  </li> -->
 				  <li>
 				   <a href="/contact" title="Contact">
 					  <i class="icon-bullhorn icon-white icon-large"></i>
@@ -74,17 +84,24 @@
 						Web Log Publications
 					</a>
 				  </li>
-				  <li class="nav-header"><span class="brand">Products</span></li>
+				  <li>
+				   <a href="//mailsac.com">
+					  <i class="icon-trash icon-white icon-large"></i>
+						Mailsac Disposable Inbox
+					</a>
+				  </li>
+				  
 				  <li>
 				   <a href="//betasac.org">
 					  <i class="icon-group icon-white icon-large"></i>
 						Betasac App Community
 					</a>
 				  </li>
+				  
 				  <li>
-				   <a href="//www.blastermate.com">
-					  <i class="icon-envelope icon-white icon-large"></i>
-						Blastermate Email Marketing
+				   <a href="http://psychscribbles.com">
+					  <i class="icon-cloud icon-white icon-large"></i>
+						PSYCH SCRIBBLES Practice Management
 					</a>
 				  </li>
 				  

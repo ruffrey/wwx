@@ -11,6 +11,10 @@ var app = module.exports = express.createServer();
 // Configuration
 
 app.configure(function(){
+	app.use(express.compress({
+		level: 9,
+		memLevel: 9
+	}));
 	app.use(express.static(__dirname + '/public'));
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'ejs');
