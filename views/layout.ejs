@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>tech consultancy <%=(title?" | "+title:"")%></title>
+    <title>Sacramento Node.js consulting - <%=(title?" | "+title:"")%></title>
+    
     <meta name="description" content="Sacramento Node.js, Web APIs and Cloud SaaS experts." />
 	<meta name="author" content="Jeff Parrish" />
 	<meta name="keywords" 
@@ -10,38 +11,13 @@
 
     <meta name="viewport" content="width=device-width" />
 
-    <!-- The HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/js/ww.js"></script>
-
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/style.css">
-	<!--[if lt IE7]>
-		<link rel="stylesheet" href="/css/font-awesome-ie.css">
+    <link rel="stylesheet" href="/css/style.css" />
+	<!--[if lte IE7]>
+		<link rel="stylesheet" href="/css/font-awesome-ie7.css" />
 	<![endif]-->
 	
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-	<% if(process.env.NODE_ENV=="production") { %>
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-9491937-4']);
-	  _gaq.push(['_setDomainName', 'wiggleware.hp.af.com']);
-	  _gaq.push(['_setAllowLinker', true]);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-	<% } %>
+    <link rel="shortcut icon" href="/favicon.ico" />
+	
   </head>
   <body>
     <div class="container">
@@ -60,7 +36,7 @@
 					</a>
 				  </li>
 				  <li>
-				   <a href="/workstuff">
+				   <a href="/sacramento-nodejs-development">
 					  <i class="icon-briefcase icon-large icon-white"></i>
 						Services
 					</a>
@@ -123,5 +99,31 @@
 			
 		</div>
     </div>
+    
+    
+    <!-- The HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/ww.js"></script>
+    
+    
+    <% if(process.env.NODE_ENV=="production") { %>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9491937-4']);
+	  _gaq.push(['_setDomainName', 'wiggleware.com']);
+	  _gaq.push(['_setAllowLinker', true]);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<% } %>
   </body>
 </html>
