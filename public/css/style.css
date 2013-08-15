@@ -55,7 +55,7 @@ ul.icons *, ol.icons *{
 }
 .skinny{font-weight:100;letter-spacing:1px;}
 .lighter{color:#ababab;}
-.darker{color:#828282;}
+.darker{color:#828282!important}
 .blacker{color:#000;}
 .center{
 	text-align:center;
