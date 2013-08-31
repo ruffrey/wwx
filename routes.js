@@ -1,21 +1,11 @@
+var ctrl = require('./controllers');
 
-exports.index = function(req, res) {
-	res.render('index.ejs', {
-		title: ''
-	});
-};
-exports.yaycode = function(req, res) {
-	res.render('yaycode.ejs', {
-		title: 'coding skills'
-	});
-};
-exports.workstuff = function(req, res) {
-	res.render('workstuff.ejs', {
-		title: 'services'
-	});
-};
-exports.contact = function(req, res) {
-	res.render('contact.ejs', {
-		title: 'get in touch'
-	});
+module.exports = exports = function(app) {
+	
+	
+	app.get('/', ctrl.index);
+	app.get('/contact', ctrl.contact);
+	app.get('/sacramento-nodejs-development', ctrl.services);
+	
+	app.get('*', ctrl["404"]);	
 };

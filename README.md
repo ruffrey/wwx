@@ -1,4 +1,3 @@
-wwx
-===
+# Wiggleware
 
-wiggleware website
+The [Wiggleware.com](http://www.wiggleware.com) website.

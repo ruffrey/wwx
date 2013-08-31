@@ -1,11 +1,11 @@
 {
   "name": "Wiggleware",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "author": "ruffrey",
   "dependencies": {
-    "express": "2.5.6",
-    "ejs": "0.7.2",
-    "formidable": "1.0.10"
+    "express": "~3.3.7",
+    "express-ejs-layouts": "~0.3.1",
+    "ejs-locals": "~1.0.2"
   },
   "domains": [
     "www.wiggleware.com"
