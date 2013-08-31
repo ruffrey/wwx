@@ -18,6 +18,11 @@ exports.contact = function(req, res) {
 		title: 'get in touch'
 	});
 };
+exports.portfolio = function(req, res) {
+	res.render('portfolio.ejs', {
+		title: 'Node.js website and application consulting portfolio'
+	});
+};
 
 exports["404"] = function(req, res) {
 	res.statusCode = 404;
