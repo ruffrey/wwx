@@ -6,7 +6,11 @@ exports.index = function(req, res) {
 };
 exports.services = function(req, res) {
 	res.render('workstuff.ejs', {
-		title: 'building products and services for the web'
+		title: 'building products and services for the web',
+		meta: {
+			description: "Born and raised in Sacramento, building your Node.js stack with love.",
+			keywords: "consulting, node.js, javascript, web development, web applications, sacramento, roseville, folsom"
+		}
 	});
 };
 exports.contact = function(req, res) {

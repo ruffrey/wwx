@@ -10,8 +10,7 @@
 
     <meta name="viewport" content="width=device-width" />
 
-	<link href='https://fonts.googleapis.com/css?family=Economica:400,700,400italic'
-		rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 	
     <link rel="stylesheet" href="/css/style.css" />
     
@@ -23,84 +22,88 @@
 	
   </head>
   <body>
-    <div class="container">
-		<div class="row-fluid">
-			<div class="span3">
-				<ul id="navigation" class="nav nav-list">
-				  <li class="nav-header">
-						<h4 style="letter-spacing:.3em;font-weight:100">
-							<a href="/" style="text-decoration:none!important">Wiggleware</a>
-						</h4>
-				  </li>
-				  <li>
-					<a href="/">
-						<i class="icon-home icon-white icon-large"></i>
-						Tech Consultancy
-					</a>
-				  </li>
-				  <li>
-				   <a href="/sacramento-nodejs-development">
-					  <i class="icon-briefcase icon-large icon-white"></i>
-						Services
-					</a>
-				  </li>
-				  
-				 <!-- <li>
-				   <a href="/yaycode">
-					  <i class="icon-white icon-large"><strong>{&nbsp;}</strong></i>
-						Skills
-					</a>
-				  </li> -->
-				  <li>
-				   <a href="/contact" title="Contact">
-					  <i class="icon-bullhorn icon-white icon-large"></i>
-						Get in Contact
-					</a>
-				  </li>
-				  <li>
-					<a href="//wiggleware.blogspot.com">
-						<i class="icon-rss icon-white icon-large"></i>
-						Web Log Publications
-					</a>
-				  </li>
-				  <li>
-				   <a href="//mailsac.com">
+	<nav class="navbar navbar-default" role="navigation">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" 
+			data-target=".navbar-ex1-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/">WIGGLEWARE</a>
+	  </div>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav">
+		  <li>
+		   <a href="/sacramento-nodejs-development">
+				Services
+				<i class="icon-briefcase"></i>
+			</a>
+		  </li>
+		  <li class="dropdown">
+			<a href="#" class="dropdown-toggle" 
+				data-toggle="dropdown">Products <b class="icon-circle-arrow-down"></b></a>
+			<ul class="dropdown-menu">
+				<li>
+				   <a href="http://mailsac.com">
 					  <i class="icon-trash icon-white icon-large"></i>
 						Mailsac Disposable Inbox
 					</a>
 				  </li>
-				  
-				  <!--<li>
-				   <a href="//betasac.org">
-					  <i class="icon-group icon-white icon-large"></i>
-						Betasac App Community
-					</a>
-				  </li>-->
-				  
 				  <li>
 				   <a href="http://psychscribbles.com">
 					  <i class="icon-cloud icon-white icon-large"></i>
 						PSYCH SCRIBBLES Practice Management
 					</a>
-				  </li>
-				  
-				</ul>
+				</li>
+			</ul>
+		  </li>
+		  <li title="Read the blog">
+			<a href="http://wiggleware.blogspot.com">
+				Publications
+				<i class="icon-rss"></i>
+			</a>
+		  </li>
+		  <li>
+		   <a href="/contact" title="Start coding Node.js projects with Wiggleware">
+				Get in Contact
+				<i class="icon-bullhorn"></i>
+			</a>
+		  </li>
+		</ul>
+		
+	  </div><!-- /.navbar-collapse -->
+	</nav>
+	
+	 
+    <div class="container">
+		<%- body %>
+		<br />
+		<hr />
+		<div class="row">
+			<div class="col-md-4">
+				<a href="http://nodejs.org"><img src="/img/nodejs-trans.png" 
+					width="106px" height="57px" /></a>
 			</div>
-			<div class="span9">
-				 <%- body %>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="span6">
+			
+			<div class="col-md-4">
 				<h6>
 					&copy; <%= (new Date()).getFullYear() %> Wiggleware
 				</h6>
 			</div>
-			<div class="span6" style="text-align: right;">
-				<a href="//nodejs.org"><img src="/img/nodejs-trans.png" width="106px" height="57px" /></a>
+			<div class="col-md-4">
+				<h6>
+				<a href="http://wiggleware.blogspot.com/2013/04/convincing-your-manager-to-use-nodejs.html">
+					Why use Node.js?</a>
+				</h6>
 			</div>
-			
 		</div>
+		<br />
+		<br />
     </div>
     
     
