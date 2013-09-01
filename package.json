@@ -16,5 +16,6 @@
   "subdomain": "ruffrey.wwx",
   "scripts": {
     "start": "app.js"
-  }
+  },
+  "main": "contact"
 }
