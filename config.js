@@ -1,6 +1,6 @@
 var cfg = {
 	
-	port: process.env.VCAP_APP_PORT || 3000,
+	port: process.env.VCAP_APP_PORT || 4003,
 	
 	
 	
